@@ -2,6 +2,7 @@
 
 # ✨ Aditya Pandey — Personal Portfolio
 
+<<<<<<< HEAD
 **A blazing-fast, AI-powered personal portfolio built with React 19, Vite, and TailwindCSS 4.**
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Now-6366f1?style=for-the-badge&logoColor=white)](https://aditya-portfolio-pi-nine.vercel.app/)
@@ -12,6 +13,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 </div>
+=======
+## 🚀 Want to watch this in action?
+Check it out [here](https://aditya-portfolio-pi-nine.vercel.app/)!
+>>>>>>> cbb2b423628a8af657046ff59932f34b035807d6
 
 ---
 
