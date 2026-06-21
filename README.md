@@ -3,7 +3,7 @@
 A beautiful, responsive personal portfolio built using **React, Vite, and TailwindCSS**. This project showcases modern web development techniques, including smooth animations, responsive layouts, and interactive UI components.
 
 ## 🚀 Want to watch this in action?
-Check it out [here](https://addy0328p.github.io/aditya-portfolio/)!
+Check it out [here](https://aditya-portfolio-pi-nine.vercel.app/)!
 
 ---
 
