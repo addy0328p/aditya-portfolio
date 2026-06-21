@@ -48,7 +48,7 @@ This is not just another portfolio — it's a **fully interactive, AI-powered sh
 
 ---
 
-## 🤖 AI Features — The Star of the Show
+## 🤖 AI Feature — The Star of the Show
 
 This portfolio integrates **Google Gemini 2.5 Flash** in two unique ways, making it unlike any other portfolio you've seen.
 
