@@ -5,19 +5,33 @@ import { motion } from "framer-motion";
 export const Experience = () => {
   const experiences = [
     {
-      title: "Software Developer Intern",
-      company: "CausalFunnel",
-      date: "Nov 2025 – Present",
+      title: "Software Development Engineer (Backend AI)",
+      company: "IndiaMART",
+      companyUrl: "https://www.linkedin.com/company/indiamart-intermesh-limited/posts/",
+      date: "Jul 2026 – Present",
       isCurrent: true,
-      tech: ["MongoDB", "Python", "Remix", "React.js", "REST APIs", "JavaScript"],
+      tech: ["Go", "Python", "Redis", "Kafka", "PostgreSQL", "GKE", "Langfuse", "Kibana", "Docker"],
       points: [
-        <>Contributed to core <strong>Heatmap</strong> and <strong>User Journey</strong> analytics tools — improved frontend responsiveness by <strong>25%</strong>.</>,
-        <>Resolved <strong>30+ API/JSON</strong> issues and implemented backend fixes using <strong>Firebase & Python</strong>, reducing API error rate by <strong>40%</strong>.</>,
-        <>Enhanced React-based <strong>A/B Testing UI</strong> and API handling, increasing experiment reliability by <strong>30%</strong>.</>,
-        <>Fixed layout and component alignment across the company <strong>WordPress</strong> site — updated <strong>50+ components</strong> to improve UI.</>,
+        <>Built an <strong>Audio Intelligence pipeline</strong> to summarize buyer–seller conversations and extract key actionable insights.</>,
+        <>Migrated backend services from <strong>PHP to Go</strong>, reducing latency and improving performance, concurrency, and scalability.</>,
+        <>Integrated <strong>Langfuse</strong> for LLM tracing and monitoring, and enhanced <strong>Kibana logging</strong> for faster debugging.</>,
       ],
       color: "indigo",
-    }
+    },
+    {
+      title: "Software Developer Intern",
+      company: "CausalFunnel",
+      companyUrl: "https://www.linkedin.com/company/causalfunnel/",
+      date: "Dec 2025 – May 2026",
+      isCurrent: false,
+      tech: ["MongoDB", "Python", "Remix", "React.js", "REST APIs", "JavaScript"],
+      points: [
+        <>Improved <strong>Heatmap</strong> and <strong>User Journey</strong> analytics features, increasing frontend responsiveness.</>,
+        <>Resolved <strong>30+ API and JSON issues</strong> across React and Python services, reducing API errors by <strong>40%</strong>.</>,
+        <>Enhanced <strong>A/B testing</strong> workflows and fixed UI inconsistencies across <strong>50+ components</strong>, improving reliability and user experience.</>,
+      ],
+      color: "purple",
+    },
   ];
 
   const colorMap = {
@@ -78,10 +92,10 @@ export const Experience = () => {
                         )}
                       </div>
                     </div>
-                    <h4 className={`text-base ${colors.bullet} font-semibold mb-5 flex items-center gap-2`}>
+                    <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className={`text-base ${colors.bullet} font-semibold mb-5 inline-flex items-center gap-2 hover:text-white transition-colors`}>
                       <Briefcase className="w-4 h-4" />
                       {exp.company}
-                    </h4>
+                    </a>
 
                     <div className="flex flex-wrap gap-1.5 mb-5">
                       {exp.tech.map((tech, i) => (

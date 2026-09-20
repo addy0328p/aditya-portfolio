@@ -30,7 +30,7 @@ export const AiProjectModal = ({ project, isOpen, onClose }) => {
 
   const projectContext = `
 Project: ${project.title}
-Description: ${project.desc?.map((d) => (typeof d === "string" ? d : d.props?.children || "")).join(" ")}
+Description: ${project.aiSummary || project.desc?.map((d) => (typeof d === "string" ? d : d.props?.children || "")).join(" ")}
 Tech Stack: ${project.tech?.join(", ")}
 GitHub: ${project.link || "N/A"}
 Live Demo: ${project.live || "N/A"}

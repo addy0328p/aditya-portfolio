@@ -91,7 +91,7 @@ export const Home = () => {
             {/* Status badge */}
             <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-[#0a0a2e]/90 backdrop-blur-xl border border-emerald-500/30 rounded-full px-4 py-1.5 shadow-lg">
               <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-              <span className="text-xs font-medium text-emerald-300 whitespace-nowrap">Open to work</span>
+              <span className="text-xs font-medium text-emerald-300 whitespace-nowrap">SDE @ IndiaMART</span>
             </div>
           </motion.div>
 
@@ -101,7 +101,7 @@ export const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className="section-number mb-4 block">Software Developer</span>
+              <span className="section-number mb-4 block">Software Engineer · Backend Developer · AI/ML Enthusiast</span>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight pb-2">
                 <span className="text-white">Hi, I'm </span>
                 <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
@@ -118,11 +118,10 @@ export const Home = () => {
             >
               <TypewriterText 
                 texts={[
-                  "SDE Intern @ CausalFunnel 🚀",
-                  "Full Stack Developer (MERN + Next.js)",
-                  "500+ DSA Problems Solved 🔥",
-                  "LangChain | AI | Vector DB Explorer",
-                  "Open Source Contributor 🌟"
+                  "Software Development Engineer @ IndiaMART",
+                  "Backend Developer | Go, Python & Distributed Systems",
+                  "Building Production AI/ML Systems",
+                  "700+ DSA Problems Solved"
                 ]} 
               />
             </motion.div>
@@ -134,7 +133,7 @@ export const Home = () => {
               className="flex justify-center md:justify-start items-center gap-4 flex-wrap mb-10"
             >
               <a
-                href="https://drive.google.com/file/d/1l1nBIZO8Dijh86XNu6qFeciSyMv6TDK-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1rDBOiGHgYsDaV6WLOZUgCC_5yvwlUEg4/view?usp=sharing"
                 target="_blank" rel="noopener noreferrer"
                 className="group flex items-center gap-2 py-3 px-7 rounded-xl font-semibold text-sm text-white transition-all duration-300 hover:scale-105"
                 style={{
@@ -142,7 +141,7 @@ export const Home = () => {
                   boxShadow: "0 0 25px rgba(99, 102, 241, 0.3)",
                 }}
               >
-                Hire Me
+                View Resume
                 <FileText className="w-4 h-4 group-hover:scale-110 transition-transform" />
               </a>
 

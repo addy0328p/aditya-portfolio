@@ -1,30 +1,28 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { motion } from "framer-motion";
-import { Code2, Layout, Database, Brain, Cloud, GraduationCap, Trophy, Target, Star, Award, Medal, BookOpen } from "lucide-react";
+import { Code2, Database, Brain, Cloud, GraduationCap, Trophy, Target, Star, Award, Medal, BookOpen } from "lucide-react";
 
 export const About = () => {
   const techStack = {
-    Languages: ["C++", "C", "JavaScript", "TypeScript", "Python", "Go", "Java", "SQL"],
-    Frontend: ["React", "Next.js", "Redux", "TailwindCSS", "Bootstrap", "HTML5", "CSS3"],
-    Backend: ["Node.js", "Express.js", "Flask", "MongoDB", "MySQL", "PostgreSQL", "Redis", "Prisma", "Supabase"],
-    "AI / ML": ["LangChain", "PyTorch", "Pinecone", "Scikit-Learn", "NumPy", "Pandas"],
-    DevOps: ["AWS", "GCP", "Docker", "Vercel", "Linux", "Git", "Postman", "Cloudinary"],
+    Languages: ["C++", "C", "Go", "Java", "Python", "JavaScript (ES6+)", "SQL"],
+    "Frameworks & Libraries": ["FastAPI", "LangGraph", "LangChain", "Node.js", "Express.js", "React.js", "Next.js", "TensorFlow", "Keras", "NumPy", "Pandas", "Scikit-learn"],
+    "Databases & Messaging": ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Kafka", "Prisma", "Supabase"],
+    "DevOps & Tools": ["Git", "GitHub", "Docker", "GKE", "Postman", "Render", "Vercel", "CI/CD", "Langfuse", "Kibana", "Cloudinary"],
   };
 
   const cpProfiles = [
-    { name: "LeetCode", stat: "500+ Problems", url: "https://leetcode.com/u/addyRT2817p/", color: "text-yellow-400", accent: "bg-yellow-500/10 border-yellow-500/20" },
+    { name: "LeetCode", stat: "500+ Problems", url: "https://leetcode.com/u/coder_a_D/", color: "text-yellow-400", accent: "bg-yellow-500/10 border-yellow-500/20" },
     { name: "Codeforces", stat: "Max 1410", url: "https://codeforces.com/profile/aditya12bone", color: "text-blue-400", accent: "bg-blue-500/10 border-blue-500/20" },
     { name: "CodeChef", stat: "3★ (1717)", url: "https://www.codechef.com/users/main_atom_88/", color: "text-amber-600", accent: "bg-amber-500/10 border-amber-500/20" },
-    { name: "GeeksForGeeks", stat: "200+ Problems", url: "https://www.geeksforgeeks.org/profile/aditya1ffgc", color: "text-green-500", accent: "bg-green-500/10 border-green-500/20" },
-    { name: "Google Skills", stat: "Cloud Badges", url: "https://www.skills.google/public_profiles/c56c4a79-dd72-406c-8810-c0ea84697193", color: "text-blue-400", accent: "bg-blue-500/10 border-blue-500/20" }
+    { name: "GeeksForGeeks", stat: "200+ Problems", url: "https://www.geeksforgeeks.org/user/aditya1ffgc/", color: "text-green-500", accent: "bg-green-500/10 border-green-500/20" }
   ];
 
   const achievements = [
-    { value: "2.8%", label: "Top Percentile", desc: "IIT JEE Mains (10L+ students)", icon: <Trophy className="w-5 h-5 text-yellow-400" /> },
-    { value: "AIR 224", label: "National Rank", desc: "TCS CodeVita (1L+ participants)", icon: <Medal className="w-5 h-5 text-indigo-400" /> },
-    { value: "Top 5%", label: "Batch Rank", desc: "Offered Teaching Assistant Role", icon: <Star className="w-5 h-5 text-purple-400" /> },
-    { value: "11", label: "Cloud Badges", desc: "Google Cloud Skill Boost", icon: <Cloud className="w-5 h-5 text-cyan-400" /> },
-    { value: "Top 25", label: "Camp Rank", desc: "Graph Theory (AlgoUniversity)", icon: <Award className="w-5 h-5 text-rose-400" /> }
+    { value: "AIR 224", label: "National Rank", desc: "TCS CodeVita 2025 · 1L+ participants", icon: <Medal className="w-5 h-5 text-indigo-400" /> },
+    { value: "Top 2.8%", label: "JEE Main 2022", desc: "National engineering entrance exam", icon: <Trophy className="w-5 h-5 text-yellow-400" /> },
+    { value: "700+", label: "DSA Problems", desc: "500+ LeetCode · 200+ GeeksforGeeks", icon: <Star className="w-5 h-5 text-purple-400" /> },
+    { value: "3★ / 1410", label: "Competitive Programming", desc: "CodeChef 3-Star · Codeforces Specialist", icon: <Award className="w-5 h-5 text-rose-400" /> },
+    { value: "1 of 4", label: "Lead Members", desc: "Codame · Official coding club of IIIT Bhopal", icon: <Code2 className="w-5 h-5 text-cyan-400" /> }
   ];
 
   const coursework = [
@@ -45,10 +43,9 @@ export const About = () => {
   const getIconForCategory = (category) => {
     const icons = {
       Languages: <Code2 className="w-4 h-4 text-indigo-400" />,
-      Frontend: <Layout className="w-4 h-4 text-purple-400" />,
-      Backend: <Database className="w-4 h-4 text-cyan-400" />,
-      "AI / ML": <Brain className="w-4 h-4 text-rose-400" />,
-      DevOps: <Cloud className="w-4 h-4 text-blue-400" />,
+      "Frameworks & Libraries": <Brain className="w-4 h-4 text-purple-400" />,
+      "Databases & Messaging": <Database className="w-4 h-4 text-cyan-400" />,
+      "DevOps & Tools": <Cloud className="w-4 h-4 text-blue-400" />,
     };
     return icons[category] || <Code2 className="w-4 h-4" />;
   };
@@ -70,7 +67,7 @@ export const About = () => {
           <div className="glass-panel rounded-2xl p-8 md:p-10 mb-14 relative overflow-hidden group hover:border-indigo-500/15 transition-all duration-500">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/5 to-purple-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-center font-light relative z-10">
-              I am a 4th Year B.Tech IT student at IIIT Bhopal and a passionate developer with expertise in building scalable web applications. I love turning complex problems into simple, beautiful, and intuitive designs while exploring System Design and AI.
+              I am a Software Development Engineer at IndiaMART, specializing in backend and AI systems. I build scalable services with Go and Python, production AI pipelines, and reliable distributed systems, backed by a B.Tech in Information Technology from IIIT Bhopal.
             </p>
           </div>
 
@@ -123,7 +120,7 @@ export const About = () => {
               </div>
               
               <div className="overflow-hidden rounded-xl bg-white/[0.02] border border-white/5 p-1.5">
-                 <img src="https://leetcard.jacoblin.cool/addyRT2817p?theme=dark&font=Baloo&ext=heatmap" alt="LeetCode Stats" className="w-full opacity-80 hover:opacity-100 transition-opacity rounded-lg" />
+                 <img src="https://leetcard.jacoblin.cool/coder_a_D?theme=dark&font=Baloo&ext=heatmap" alt="LeetCode Stats" className="w-full opacity-80 hover:opacity-100 transition-opacity rounded-lg" />
               </div>
             </div>
           </div>
@@ -164,7 +161,7 @@ export const About = () => {
               <div className="bg-white/[0.02] border border-white/5 p-5 rounded-xl mb-5">
                 <h4 className="text-lg font-bold text-white mb-1">B.Tech in Information Technology</h4>
                 <p className="text-sm font-semibold mb-3 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                  IIIT Bhopal <span className="text-gray-500 font-normal text-xs ml-2">(2022 – 2026)</span>
+                  Indian Institute of Information Technology, Bhopal <span className="text-gray-500 font-normal text-xs ml-2">(Nov 2022 – Jun 2026)</span>
                 </p>
                 <div className="inline-block bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 px-3 py-1.5 rounded-lg font-semibold text-sm">
                   CGPA: 7.80
